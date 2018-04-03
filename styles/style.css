@@ -254,9 +254,9 @@ footer {
 	
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 667px) {
 	.social {
 		font-size: 0;
-		visibility: hidden;
+		display: none;
 }
 }
