@@ -1,0 +1,261 @@
+/*RESET*/
+
+body, h1,h2,p,ul,li,a {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	color: #222222;
+	
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+/*HEADER*/
+
+.menu-bg{
+	width: 100%;
+	background:#4C54AD;
+	
+}
+.menu{
+	max-width:960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.menu-links {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 15px 10px;
+	
+}
+.menu-links a {
+	padding: 10px 10px;
+	color: white;
+	transition: background 0.3 0.3;
+	
+/*	padding: 5%;*/
+}
+
+.menu-links a:hover{
+background: #6E7AF9;
+}
+
+.nome-principal {
+	color: white;
+	text-align: center;
+	align-self: center;
+}
+
+
+/*SOBRE*/
+
+.main {
+	max-width: 960px;
+	margin: 0 auto;
+	display: block;
+	border-bottom: 3px solid #6e7af9;
+	padding-top: 30px;
+	
+}
+.sobre {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 30px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+
+.sobre p {
+	order:-4;
+	font-size: 1.25em;
+	margin: 15px 10px;
+}
+
+.foto-pessoal img {
+	flex: 1;
+	border-radius: 50%;
+	
+	
+}
+
+.item-sobre {
+	flex: 1;
+	font-size: 6em;
+	max-width: 100%;
+	padding: 10px;
+}
+
+
+
+
+/*CONHECIMENTOS*/
+
+.conhecimentos {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.conhecimentos p{
+	font-size: 1.5em;
+	font-weight: bold;
+	display: block;
+	border-bottom: 3px solid #6e7af9;
+	align-self: flex-start;
+}
+.item-conhecimento {
+	font-size: 6em;
+	margin-top: 20px;
+}
+
+.fa-html5{
+	color: #ff7e00;
+}
+
+.fa-css3-alt {
+	color: #37ace8;
+}
+
+.fa-js{
+	color:#e8e237;
+}
+.fa-wordpress {
+	color:#464646;
+}
+
+.fa-database {
+	color: #d3d4d6
+}
+
+.fa-git {
+	color:  #f05033;
+}
+
+
+/*CONTATO*/
+
+.contato {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+	height: 200px;
+	flex-wrap: wrap;
+	background:#4C54AD;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	flex-direction: column;
+	
+}
+
+.contato p{
+	font-size: 1.25em;
+	color: white;
+	padding-bottom: 30px;
+	
+}
+.contato a {
+	color: white;
+	font-size: 1.25em;
+	margin-bottom: 20px;
+}
+.fa-envelope, .fa-phone {
+	color: black;
+	font-size: 1em;
+	margin-right: 10px;
+	cursor: pointer;
+	
+}
+
+
+
+/*FOOTER*/
+
+footer {
+	
+	width: 100%;
+	background: #6E7AF9;
+	
+}
+.rodape-bg {
+	
+	margin: 0 auto;
+	max-width: 960px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rodape-bg p{
+	flex: 1;
+	padding: 30px;
+	text-align: center;
+}
+
+
+/*MEDIAS TYPES*/
+
+@media screen and (min-width: 768px) {
+	.menu {
+		justify-content: space-between;
+	}
+	.sobre{
+		flex-direction: row;
+	}
+	
+	.conhecimentos {
+		
+		justify-content: space-around;
+		align-items: flex-end;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.item-conhecimento {
+		
+		flex: 1 1 33%;
+	}
+	.conhecimentos p  {
+		
+		flex: 1 1 960px;
+	}
+	.menu-mobile {
+		visibility: hidden;
+	}
+	
+}
+
+@media screen and (max-width: 375px) {
+	.social {
+		visibility: hidden;
+}
+}
